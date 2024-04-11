@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1></h1>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file-input" class="file-label" >Selectionner fichier</label>
+                    <input type="file" id="file-input" name="files" multiple>
+                    <span id="no-file-selected">Pas de fichier selectionné</span>
+                </div>
+                <div class="form-group">
+                    <label for="email-input">Votre adresse mail</label>
+                    <input type="email" id="email-input" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <button type="submit">Télécharger Fichier</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
